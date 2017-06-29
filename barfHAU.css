@@ -1,8 +1,4 @@
 .col-md-4{
-/*
-    border: 1px solid black;
-    background-color: rgb(150,200,150);
-*/
     text-align: center;
     align-items: center
 }
@@ -35,12 +31,12 @@ label{
     font-weight: 400;
     width: 70%;
     margin: 2%;
-    
 }
 
 #output-krill{
     height: 90px;
 }
+
 #input-neutered{
     transform: scale(1.2);
 }
