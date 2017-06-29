@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="barfHAU.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>BARFhau!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table">
+                <tr id="first-row">
+                    <div class="col-md-4">
+                        <h3>WYLICZENIE DZIENNEJ PORCJI</h3>
+                        <hr>
+                        <label for="input-weight">Waga (kg):</label>
+                        <input type="number" id="input-weight" class="form-control inp">
+                        <label for="input-age">Wiek:</label>
+                        <input type="number" id="input-age" class="form-control inp">
+                        <select id="input-age-unit" class="form-control">
+                            <option value="1">lat</option>
+                            <option value="2">miesięcy</option>
+                        </select>
+                        <label for="input-activ">Aktywność:</label>
+                        <select id="input-activ" class="form-control">
+                            <option value="1">mała</option>
+                            <option value="2">średnia</option>
+                            <option value="3">duża</option>
+                        </select>
+                        <label for="input-neutered">Po kastracji/sterylizacji:</label>
+                        <input type="checkbox" id="input-neutered">
+                        <button type="button" id="submit-1" class="btn btn-success">Oblicz</button>
+                        <button type="button" id="clear" class="btn btn-danger">Wyczyść</button>
+                        <br>
+                        <label for="output-portion">Zalecana dzienna porcja:</label>
+                        <input type="text" id="output-portion" class="form-control inp" readonly>
+                    </div>
+                    <div class="col-md-4">
+                       <h3>WYLICZENIE SKŁADU PORCJI</h3>
+                        <hr>
+                        <label for="input-bones-type">Kości:</label>
+                        <select id="input-bones-type" class="form-control">
+                            <option value="1">mięsne 45%</option>
+                            <option value="2">mięsne 30%</option>
+                            <option value="3">czyste</option>
+                        </select>
+                        <input type="text" id="output-bones" class="form-control inp" readonly>
+                        <label for="output-meat">Mięso:</label>
+                        <input type="text" id="output-meat" class="form-control inp" readonly>
+                        <label for="output-liver">Wątroba:</label>
+                        <input type="text" id="output-liver" class="form-control inp" readonly>
+                        <label for="output-pluck">Inne podroby:</label>
+                        <input type="text" id="output-pluck" class="form-control inp" readonly>
+                        <label for="output-veggies">Warzywa/owoce:</label>
+                        <input type="text" id="output-veggies" class="form-control inp" readonly>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>SUPLEMENTACJA</h3>
+                        <hr>
+                        <label for="output-yeast">Drożdże piwne:</label>
+                        <input type="text" id="output-yeast" class="form-control" readonly>
+                        <label for="output-krill">Kryl/olej z łososia:</label>
+                        <textarea id="output-krill" class="form-control" readonly></textarea>
+                        <label for="output-algae">Algi:</label>
+                        <input type="text" id="output-algae" class="form-control" readonly>
+                        <label for="output-msm">MSM:</label>
+                        <input type="text" id="output-msm" class="form-control" readonly>
+                        <label for="output-rose">Dzika róża:</label>
+                        <input type="text" id="output-rose" class="form-control" readonly>
+                    </div>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="barfHAU.js"></script>
+</body>
+
+</html>
