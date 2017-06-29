@@ -1,5 +1,3 @@
-//IIFE
-
 var Logic = (function () {
 
     var dog = function (weight, age, activ, ageUnit, isNeutered) {
